@@ -62,6 +62,6 @@ function collide(){
   }, 1);
   setTimeout(function(){
     clearInterval(jump);
-  }, 900);
+  }, 800);
   return ans;
 }
