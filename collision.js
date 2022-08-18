@@ -18,7 +18,7 @@ function check(){
   var left = $(".pipes-container").css("margin-left");
   left = parseInt(left, 10);
   //console.log(left);
-  if ((left <= next + 50) && (left >= next - 130)){
+  if ((left <= next + 50) && (left >= next - 120)){
     flag = 1;
     var temp = collide();
     if ($(".check").text() == 1){
@@ -55,7 +55,7 @@ function collide(){
     var curr = $(".bird").css("margin-top");
     curr = parseInt(curr, 10);
     curr += 35;
-    if (Math.abs(curr - height) >= 85){
+    if (Math.abs(curr - height) >= 90){
       console.log(-1);
       $(".check").text('1');
     }
