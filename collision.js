@@ -18,7 +18,7 @@ function check(){
   var left = $(".pipes-container").css("margin-left");
   left = parseInt(left, 10);
   //console.log(left);
-  if ((left <= next + 50) && (left >= next - 120)){
+  if ((left <= next + 45) && (left >= next - 120)){
     flag = 1;
     var temp = collide();
     if ($(".check").text() == 1){
@@ -46,7 +46,7 @@ function collide(){
   var pipes = document.querySelectorAll(".pipe-img");
   var height = pipes[ind].style.marginTop;
   height = parseInt(height, 10);
-  height += 74.5;
+  height += 75;
   netHeight = $(document).height();
   height = netHeight * height * 0.01;
 
