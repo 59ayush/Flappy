@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+  <body>
+
+
+    <!-- BACKGROUND CONTAINER -->
+
+    <div class="container-fluid background-container">
+      <img src="images/buildings.png" alt="buildings" class="buildings-img">
+      <img src="images/bottom.jpg" alt="bottom" class="bottom-img">
+    </div>
+
+
+    <!-- HEADING CONTAINER -->
+
+    <div class="container-fluid heading-container">
+      <p>FLAPPY <br />BIRD</p>
+    </div>
+
+
+    <!-- PIPES CONTAINER -->
+
+    <div class="container-fluid pipes-container">
+    </div>
+
+
+    <!-- BIRD IMAGE -->
+    <img src="images/bird.png" alt="bird" class="bird">
+
+
+    <!-- SCORE COUNTER -->
+    <div class="container-fluid score-container">
+      <p class="score">Avoid the Pipes. Press Any Key to JUMP</p>
+    </div>
+
+
+    <!-- COLLISION CHECKER -->
+    <p class='check'>0</p>
+
+    <!-- <script type="text/javascript" src="start.js" id="start-script"></script> -->
+    <script type='text/javascript' src='pipes.js'></script>
+    <script type='text/javascript' src='collision.js'></script>
+    <script type='text/javascript' src='bird.js'></script>
+
+  </body>
+
+</html>
